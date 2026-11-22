@@ -113,5 +113,4 @@ groundedness failure.
 - `LANGFUSE_MASK_PII=false` by default. **Turn it on before serving real users** — the eligibility
   interview collects age, income, caste category and disability status.
 
-Full setup, ingest and query internals, monitoring, and the reasoning behind the immutable Qdrant
-choices are in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+

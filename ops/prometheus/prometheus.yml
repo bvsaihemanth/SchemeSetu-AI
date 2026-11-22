@@ -1,0 +1,25 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: schemes-rag-api
+    metrics_path: /metrics
+    static_configs:
+      # host.docker.internal reaches the host from inside the container on
+      # Docker Desktop (Windows/macOS). On Linux, use the host IP or add
+      # extra_hosts: ["host.docker.internal:host-gateway"] to the service.
+      - targets: ["host.docker.internal:8080"]
+        labels:
+          service: schemes-rag
+
+  - job_name: qdrant
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["qdrant:6333"]
+        labels:
+          service: qdrant
+
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]

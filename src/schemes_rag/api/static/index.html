@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<!--
+  Single-page UI for the schemes RAG API.
+
+  Deliberately one file with no build step, no framework and no dependency:
+  it is served by the same FastAPI process as the API, so there is one thing
+  to start and nothing to keep in sync.
+
+  The part that matters is the eligibility interview. The agent returns every
+  outstanding question at once in assessment.questions; this page walks the
+  user through them ONE AT A TIME with Yes/No buttons, collects the answers
+  client-side, and posts them back as [{question, answer}] pairs.
+
+  That pairing is the whole point. Asking the user to type "1)yes,2)yes,3)no"
+  and having the model re-associate those answers with its own criteria is
+  what failed before: it re-asked with an empty question list, then declared
+  it had insufficient information about a scheme it had just been told six
+  facts about. A button press cannot be mispaired with the question above it.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Government Schemes Assistant</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --panel: #ffffff;
+    --ink: #1a1d21;
+    --ink-soft: #5c6670;
+    --line: #e3e6ea;
+    --accent: #1b5e4b;
+    --accent-ink: #ffffff;
+    --yes: #1b5e4b;
+    --no: #8c3330;
+    --warn: #8a5a00;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 14px 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  header h1 { font-size: 17px; margin: 0; font-weight: 600; letter-spacing: .2px; }
+  header .meta { font-size: 12px; opacity: .8; font-variant-numeric: tabular-nums; }
+  header .meta a { color: inherit; }
+  main { max-width: 860px; margin: 0 auto; padding: 20px; }
+
+  /* ---------- transcript ---------- */
+  #log { display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; }
+  .turn { display: flex; flex-direction: column; gap: 6px; }
+  .turn.user { align-items: flex-end; }
+  .bubble {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    max-width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .turn.user .bubble {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-color: transparent;
+    max-width: 80%;
+  }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: .6px; color: var(--ink-soft); }
+
+  /* ---------- citations ---------- */
+  .cites { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); }
+  .cites ol { margin: 6px 0 0; padding-left: 22px; }
+  .cites li { font-size: 13px; color: var(--ink-soft); margin-bottom: 3px; }
+  .cites a { color: var(--accent); }
+
+  /* ---------- feedback ---------- */
+  .fb { display: flex; gap: 6px; align-items: center; font-size: 12px; color: var(--ink-soft); }
+  .fb button {
+    background: var(--panel); border: 1px solid var(--line); color: var(--ink-soft);
+    border-radius: 999px; padding: 3px 10px; font-size: 13px; font-weight: 400;
+  }
+  .fb button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .fb button.chosen { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+  .fb button.chosen-no { background: var(--no); color: #fff; border-color: transparent; }
+
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; font-size: 11px; }
+  .tag {
+    background: #eef1f3; color: var(--ink-soft);
+    border-radius: 999px; padding: 2px 9px;
+    font-variant-numeric: tabular-nums;
+  }
+  .tag.warn { background: #fdf3e0; color: var(--warn); }
+
+  /* ---------- composer ---------- */
+  form {
+    display: flex; gap: 10px; position: sticky; bottom: 0;
+    background: var(--bg); padding: 12px 0;
+  }
+  textarea {
+    flex: 1; resize: vertical; min-height: 48px; max-height: 180px;
+    padding: 12px 14px; font: inherit; color: inherit;
+    border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel);
+  }
+  textarea:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  button {
+    font: inherit; font-weight: 600; cursor: pointer;
+    border: 1px solid transparent; border-radius: var(--radius);
+    padding: 12px 18px; background: var(--accent); color: var(--accent-ink);
+  }
+  button:disabled { opacity: .5; cursor: progress; }
+  button.ghost { background: transparent; color: var(--ink-soft); border-color: var(--line); }
+
+  .examples { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .examples button {
+    background: var(--panel); color: var(--ink-soft);
+    border-color: var(--line); font-weight: 400;
+    padding: 6px 12px; font-size: 13px; border-radius: 999px;
+  }
+
+  /* ---------- eligibility modal ---------- */
+  dialog {
+    border: none; border-radius: 14px; padding: 0; max-width: 480px; width: calc(100% - 32px);
+    box-shadow: 0 18px 50px rgba(0,0,0,.22); color: var(--ink);
+  }
+  dialog::backdrop { background: rgba(16,20,24,.55); }
+  .modal-head { padding: 18px 22px 0; }
+  .modal-scheme { font-size: 13px; color: var(--ink-soft); }
+  .progress-rail { height: 4px; background: var(--line); border-radius: 999px; margin: 12px 0 0; }
+  .progress-fill { height: 4px; background: var(--accent); border-radius: 999px; transition: width .18s ease; }
+  .modal-body { padding: 16px 22px 20px; }
+  .step { font-size: 11px; text-transform: uppercase; letter-spacing: .6px; color: var(--ink-soft); }
+  #qText { font-size: 17px; font-weight: 600; margin: 8px 0 20px; line-height: 1.4; }
+  .yn { display: flex; gap: 10px; }
+  .yn button { flex: 1; padding: 14px; font-size: 15px; }
+  .yn .btn-yes { background: var(--yes); }
+  .yn .btn-no  { background: var(--no); }
+  .open-answer { display: flex; gap: 10px; }
+  .open-answer input {
+    flex: 1; padding: 13px 14px; font: inherit; color: inherit;
+    border: 1px solid var(--line); border-radius: var(--radius);
+  }
+  .open-answer input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  [hidden] { display: none !important; }
+  .modal-foot {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 22px; border-top: 1px solid var(--line); background: #fafbfc;
+    border-radius: 0 0 14px 14px;
+  }
+  .modal-foot button {
+    background: none; color: var(--ink-soft); border: none;
+    padding: 4px 2px; font-weight: 400; font-size: 13px; text-decoration: underline;
+  }
+  .err {
+    background: #fdecea; border: 1px solid #f3c9c4; color: #7a2a24;
+    padding: 10px 14px; border-radius: var(--radius); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Government Schemes Assistant</h1>
+  <span class="meta" id="status">checking&hellip;</span>
+  <span class="meta" style="margin-left:auto"><a href="/docs">API docs</a></span>
+</header>
+
+<main>
+  <div class="examples" id="examples">
+    <button type="button">Who can apply for PM-KISAN?</button>
+    <button type="button">Am I eligible for PMEGP?</button>
+    <button type="button">What documents do I need for PMAY?</button>
+    <button type="button">Compare PMJJBY and PMSBY</button>
+    <button type="button">I'm a farmer in Telangana with 2 hectares</button>
+  </div>
+
+  <div id="log"></div>
+
+  <form id="composer">
+    <textarea id="q" placeholder="Ask about a scheme, or describe your situation&hellip;"
+              autocomplete="off" autofocus></textarea>
+    <button id="send" type="submit">Ask</button>
+    <button id="reset" type="button" class="ghost" title="Forget the profile and start a new thread">New</button>
+  </form>
+</main>
+
+<!-- One question on screen at a time. The answer is attached to the question
+     text currently displayed, so the pairing is structural. -->
+<dialog id="modal">
+  <div class="modal-head">
+    <div class="modal-scheme" id="qScheme"></div>
+    <div class="progress-rail"><div class="progress-fill" id="qFill" style="width:0%"></div></div>
+  </div>
+  <div class="modal-body">
+    <div class="step" id="qStep"></div>
+    <p id="qText"></p>
+    <div class="yn" id="qYesNo">
+      <button type="button" class="btn-yes" data-answer="yes">Yes</button>
+      <button type="button" class="btn-no"  data-answer="no">No</button>
+    </div>
+    <!-- Shown only when the agent asks something a Yes cannot answer. See
+         isOpenQuestion(): "yes" to "How much land do you hold?" is not an
+         answer, it is a corrupt fact. -->
+    <form class="open-answer" id="qOpen" hidden>
+      <input id="qInput" type="text" autocomplete="off" aria-label="Your answer">
+      <button type="submit">Answer</button>
+    </form>
+  </div>
+  <div class="modal-foot">
+    <button type="button" id="qSkip">Not sure &mdash; skip</button>
+    <button type="button" id="qCancel">Cancel check</button>
+  </div>
+</dialog>
+
+<script>
+(() => {
+  "use strict";
+
+  const $ = (id) => document.getElementById(id);
+  const log = $("log"), form = $("composer"), input = $("q");
+  const sendBtn = $("send"), modal = $("modal");
+
+  // thread_id ties the turns together server-side: the profile and the
+  // scheme under assessment live in graph state, not in this page. Drop it
+  // and the interview restarts from nothing.
+  let threadId = null;
+  let busy = false;
+
+  // --- interview state: the questions we were handed, and how far we are ---
+  let queue = [];     // question strings, in the order the agent returned them
+  let picked = [];    // [{question, answer}] built as the user presses buttons
+  let cursor = 0;
+  let scheme = "";
+
+  // ---------------------------------------------------------------- helpers
+
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;   // textContent, never innerHTML:
+    return n;                                  // answers carry scheme text
+  }
+
+  function addTurn(who, text) {
+    const turn = el("div", "turn " + who);
+    turn.appendChild(el("div", "label", who === "user" ? "You" : "Assistant"));
+    turn.appendChild(el("div", "bubble", text));
+    log.appendChild(turn);
+    turn.scrollIntoView({ behavior: "smooth", block: "end" });
+    return turn;
+  }
+
+  function addError(text) {
+    const turn = el("div", "turn");
+    turn.appendChild(el("div", "err", text));
+    log.appendChild(turn);
+    turn.scrollIntoView({ behavior: "smooth", block: "end" });
+  }
+
+  /** Sources, rendered as a numbered list so [1] in the answer resolves. */
+  function addCitations(turn, cites) {
+    if (!cites || !cites.length) return;
+    const box = el("div", "cites");
+    box.appendChild(el("div", "label", "Sources"));
+    const ol = document.createElement("ol");
+    cites.sort((a, b) => a.marker - b.marker);
+    for (const c of cites) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(`${c.scheme_name} — ${c.locator}`));
+      if (c.source_url) {
+        li.appendChild(document.createTextNode(" "));
+        const a = el("a", null, "source");
+        a.href = c.source_url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        li.appendChild(a);
+      }
+      ol.appendChild(li);
+    }
+    box.appendChild(ol);
+    turn.querySelector(".bubble").appendChild(box);
+  }
+
+  /** Route, timing and the profile the verdict rested on. */
+  function addTags(turn, data) {
+    const tags = el("div", "tags");
+    if (data.route) tags.appendChild(el("span", "tag", data.route));
+    const ms = data.latency_ms && data.latency_ms.total_ms;
+    if (ms) tags.appendChild(el("span", "tag", (ms / 1000).toFixed(1) + "s"));
+    if (data.insufficient_evidence)
+      tags.appendChild(el("span", "tag warn", "not in sources"));
+    if (data.profile_summary && data.profile_summary !== "(nothing known yet)")
+      tags.appendChild(el("span", "tag", "profile: " + data.profile_summary));
+    if (tags.childElementCount) turn.appendChild(tags);
+  }
+
+  /** Schemes the Discovery agent shortlisted, as links. */
+  function addSuggestions(turn, list) {
+    if (!list || !list.length) return;
+    const box = el("div", "cites");
+    box.appendChild(el("div", "label", "Suggested schemes"));
+    const ol = document.createElement("ol");
+    for (const s of list) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(s.scheme_name));
+      if (s.source_url) {
+        li.appendChild(document.createTextNode(" "));
+        const a = el("a", null, "details");
+        a.href = s.source_url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        li.appendChild(a);
+      }
+      ol.appendChild(li);
+    }
+    box.appendChild(ol);
+    turn.querySelector(".bubble").appendChild(box);
+  }
+
+  /** Thumbs up/down, posted to /feedback as a Langfuse score.
+   *
+   *  Only rendered when the server returned a trace_id -- with tracing off
+   *  there is nowhere to record a rating, and buttons that silently discard
+   *  the click are worse than no buttons.
+   */
+  function addFeedback(turn, traceId) {
+    if (!traceId) return;
+    const box = el("div", "fb");
+    box.appendChild(el("span", null, "Was this helpful?"));
+
+    const up = el("button", null, "\u{1F44D}");
+    const down = el("button", null, "\u{1F44E}");
+    up.type = down.type = "button";
+    up.title = "Helpful";
+    down.title = "Not helpful";
+
+    async function send(helpful, btn) {
+      up.disabled = down.disabled = true;
+      // A thumbs-down is where the detail lives: the rating says something
+      // was wrong, the comment says what. Optional, so it never blocks.
+      let comment = null;
+      if (!helpful) {
+        comment = prompt("What was wrong with it? (optional)") || null;
+      }
+      try {
+        const res = await fetch("/feedback", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ trace_id: traceId, helpful, comment }),
+        });
+        if (!res.ok) throw new Error((await res.json()).detail || res.statusText);
+        btn.classList.add(helpful ? "chosen" : "chosen-no");
+        box.lastChild.textContent = " recorded";
+      } catch (err) {
+        up.disabled = down.disabled = false;
+        box.lastChild.textContent = " could not record: " + err.message;
+      }
+    }
+
+    up.addEventListener("click", () => send(true, up));
+    down.addEventListener("click", () => send(false, down));
+    box.appendChild(up);
+    box.appendChild(down);
+    box.appendChild(el("span", null, ""));
+    turn.appendChild(box);
+  }
+
+  function setBusy(on) {
+    busy = on;
+    sendBtn.disabled = on;
+    sendBtn.textContent = on ? "Thinking…" : "Ask";
+  }
+
+  // ------------------------------------------------------------------ fetch
+
+  async function post(body) {
+    const res = await fetch("/query", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) {
+      // FastAPI puts the reason in `detail`; surface it rather than a code.
+      let detail = res.status + " " + res.statusText;
+      try {
+        const j = await res.json();
+        if (j.detail) detail = typeof j.detail === "string" ? j.detail : JSON.stringify(j.detail);
+      } catch { /* non-JSON error body */ }
+      throw new Error(detail);
+    }
+    return res.json();
+  }
+
+  /** One turn: post, render, and open the interview if questions came back. */
+  async function turn(body) {
+    setBusy(true);
+    const thinking = addTurn("bot", "…");
+    try {
+      const data = await post(body);
+      threadId = data.thread_id || threadId;
+      thinking.remove();
+
+      const t = addTurn("bot", data.answer || "(no answer)");
+      addCitations(t, data.citations);
+      addSuggestions(t, data.suggested_schemes);
+      addTags(t, data);
+      // Not on a turn that is still asking: rating a question rather than an
+      // answer would put noise where the signal should be.
+      if (!data.awaiting_answer) addFeedback(t, data.trace_id);
+
+      const questions = (data.assessment && data.assessment.questions) || [];
+      if (data.awaiting_answer && questions.length) {
+        startInterview(questions, (data.assessment && data.assessment.scheme_name) || "");
+      } else if (data.awaiting_answer) {
+        input.focus();          // route=clarify: the agent wants free text
+      }
+    } catch (err) {
+      thinking.remove();
+      addError("Request failed: " + err.message);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  // -------------------------------------------------------------- interview
+
+  function startInterview(questions, schemeName) {
+    queue = questions.slice();
+    picked = [];
+    cursor = 0;
+    scheme = schemeName;
+    $("qScheme").textContent = schemeName ? "Eligibility check — " + schemeName : "Eligibility check";
+    step();
+  }
+
+  // The agent is told to ask only yes/no questions, with the scheme's own
+  // threshold folded in ("Is your income below Rs 2 lakh?"). Models drift,
+  // though, and an open question answered with a button is worse than no
+  // answer: "How much land do you hold? -> yes" is recorded as an established
+  // fact and poisons the verdict. So detect the shape and ask for text.
+  const OPEN_START = /^\s*(what|how much|how many|which|where|when|who|why|in which|state your|specify)\b/i;
+  function isOpenQuestion(q) {
+    if (/^\s*(are|is|do|does|did|have|has|can|will|would|were|was|any)\b/i.test(q)) return false;
+    return OPEN_START.test(q);
+  }
+
+  /** Show the question at `cursor`, or submit once they are all answered. */
+  function step() {
+    if (cursor >= queue.length) {
+      if (modal.open) modal.close();
+      submit();
+      return;
+    }
+    const q = queue[cursor];
+    $("qStep").textContent = `Question ${cursor + 1} of ${queue.length}`;
+    $("qText").textContent = q;
+    $("qFill").style.width = Math.round((cursor / queue.length) * 100) + "%";
+
+    const open = isOpenQuestion(q);
+    $("qYesNo").hidden = open;
+    $("qOpen").hidden = !open;
+    $("qInput").value = "";
+
+    if (!modal.open) modal.showModal();
+    if (open) $("qInput").focus();
+  }
+
+  /** Record an answer against the question currently on screen. */
+  function answer(value) {
+    picked.push({ question: queue[cursor], answer: value });
+    cursor += 1;
+    step();
+  }
+
+  async function submit() {
+    if (!picked.length) return;
+    const summary = picked
+      .map((p, i) => `${i + 1}. ${p.question} — ${p.answer}`)
+      .join("\n");
+    addTurn("user", summary);
+    // `question` is a human-readable placeholder for the transcript. The
+    // server routes on `answers` and ignores it, so nothing has to parse
+    // this text -- which is the point.
+    await turn({
+      question: "Answered " + picked.length + " eligibility question(s).",
+      thread_id: threadId,
+      answers: picked,
+    });
+    picked = [];
+    queue = [];
+  }
+
+  // Yes / No. A skipped question is simply not sent: the criterion stays
+  // unknown and the verdict says so, which is honest. Sending "unknown" as an
+  // answer would instead record a fact the user never gave.
+  modal.querySelectorAll("[data-answer]").forEach((b) =>
+    b.addEventListener("click", () => answer(b.dataset.answer))
+  );
+  $("qOpen").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const text = $("qInput").value.trim();
+    if (text) answer(text);
+  });
+  $("qSkip").addEventListener("click", () => { cursor += 1; step(); });
+  $("qCancel").addEventListener("click", () => {
+    modal.close();
+    queue = []; picked = []; cursor = 0;
+  });
+  // Esc closes a <dialog> natively; treat that as cancelling the check.
+  modal.addEventListener("cancel", () => { queue = []; picked = []; cursor = 0; });
+
+  // --------------------------------------------------------------- composer
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const text = input.value.trim();
+    if (!text || busy) return;
+    input.value = "";
+    addTurn("user", text);
+    turn({ question: text, thread_id: threadId });
+  });
+
+  // Enter sends, Shift+Enter is a newline.
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      form.requestSubmit();
+    }
+  });
+
+  $("examples").addEventListener("click", (e) => {
+    if (e.target.tagName !== "BUTTON" || busy) return;
+    input.value = e.target.textContent;
+    form.requestSubmit();
+  });
+
+  // A new thread_id is how you clear the profile: state lives server-side
+  // keyed on it, so there is nothing local to reset.
+  $("reset").addEventListener("click", () => {
+    threadId = null;
+    queue = []; picked = []; cursor = 0;
+    log.replaceChildren();
+    input.focus();
+  });
+
+  // ----------------------------------------------------------------- health
+
+  // Surfaced up front because the two ways this page fails -- an empty
+  // collection and an unreachable or misconfigured LLM -- both otherwise
+  // present as a generic error on the first question.
+  fetch("/health")
+    .then((r) => r.json())
+    .then((h) => {
+      const bits = [
+        h.qdrant ? (h.points || 0).toLocaleString() + " chunks" : "Qdrant down",
+        h.llm ? "LLM ok" : "LLM unreachable",
+      ];
+      // Stated explicitly because "I enabled tracing but the dashboard is
+      // empty" and "the app never picked up my keys" look the same otherwise.
+      if (h.tracing) bits.push("tracing on");
+      if (h.detail) bits.push(h.detail);
+      $("status").textContent = bits.join(" · ");
+    })
+    .catch(() => { $("status").textContent = "API unreachable"; });
+})();
+</script>
+</body>
+</html>

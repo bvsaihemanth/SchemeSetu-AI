@@ -1,0 +1,595 @@
+================================================================================
+CENTRAL GOVERNMENT SCHEMES - 85 BENCHMARK QUESTIONS & DIRECT ANSWERS
+Reference Source: myScheme Portal (https://www.myscheme.gov.in/) & Official Scheme Guidelines
+================================================================================
+
+Q1. Who can apply for PM-KISAN?
+A1. All landholding farmer families across India who have cultivable land registered in their names are eligible. Excluded from the scheme are institutional landholders, constitutional post holders, serving or retired government employees/officers, pensioners drawing Rs 10,000 or more per month, individuals who paid income tax in the last assessment year, and registered professionals (doctors, lawyers, engineers, chartered accountants, architects).
+
+--------------------------------------------------------------------------------
+Q2. Am I eligible for PMEGP?
+A2. Any individual aged 18 years and above is eligible. There is no family income ceiling. To establish a manufacturing project costing above Rs 10 lakh or a service project costing above Rs 5 lakh, the applicant must have passed at least Class 8. Only new units are eligible for initial funding. Self-Help Groups (SHGs), registered cooperative societies, and charitable trusts are also eligible.
+
+--------------------------------------------------------------------------------
+Q3. What documents do I need for PMAY-Gramin?
+A3. 
+- Aadhaar card of applicant and all adult family members
+- Bank account details (passbook copy linked with Aadhaar)
+- MGNREGA Job Card number
+- Swachh Bharat Mission (SBM) registration number (for the Rs 12,000 toilet incentive)
+- Land ownership document / revenue record or affidavit of landlessness/no pucca house
+- Signed Aadhaar consent form.
+
+--------------------------------------------------------------------------------
+Q4. Compare PMJJBY and PMSBY.
+A4. 
+- Type of Risk Cover: PMJJBY covers death due to any reason (life insurance); PMSBY covers accidental death and permanent/partial disability only.
+- Coverage Limit: Both provide Rs 2,00,000 (PMSBY provides Rs 1,00,000 for permanent partial disability).
+- Eligible Age Bracket: PMJJBY is 18 to 50 years (life cover extends up to 55 years); PMSBY is 18 to 70 years.
+- Annual Premium: PMJJBY costs Rs 436 per annum; PMSBY costs Rs 20 per annum.
+- Payment Mode: Auto-debited annually from the subscriber's bank or post office savings account.
+
+--------------------------------------------------------------------------------
+Q5. I'm a farmer in Telangana with 2 hectares of agricultural land, which central government schemes can I benefit from?
+A5. As a small/marginal farmer with 2 hectares (~4.94 acres):
+- PM-KISAN: Rs 6,000 annual income support in 3 equal installments of Rs 2,000.
+- PM Fasal Bima Yojana (PMFBY): Subsidized crop insurance (1.5% premium for Rabi, 2% for Kharif, 5% for commercial/horticultural crops).
+- Kisan Credit Card (KCC): Short-term crop loans up to Rs 3 lakh at an effective 4% interest rate (with 2% subvention and 3% prompt repayment incentive).
+- PM Kisan Maan-Dhan Yojana (PM-KMDY): Contributory pension of Rs 3,000 per month after age 60 (entry age 18-40, holding up to 2 hectares).
+- PM Krishi Sinchayee Yojana (PMKSY - Per Drop More Crop): Up to 55% capital subsidy for drip/sprinkler irrigation systems.
+- Soil Health Card Scheme: Periodic free soil nutrient testing and customized fertilizer advisory.
+
+--------------------------------------------------------------------------------
+Q6. What is the maximum loan limit and subsidy available under the PMMY Mudra Tarun category?
+A6. 
+- Maximum Loan Limit: Above Rs 5,00,000 and up to Rs 10,00,000 (under Tarun Plus, this limit is extended up to Rs 20,00,000 for borrowers who have successfully repaid previous Tarun loans).
+- Subsidy: Mudra loans do not offer direct cash or capital subsidies; they offer collateral-free credit with credit guarantee backing under CGFMU (Credit Guarantee Fund for Micro Units).
+
+--------------------------------------------------------------------------------
+Q7. What are the key differences between Ayushman Bharat PM-JAY and the Central Government Health Scheme (CGHS)?
+A7. 
+- Beneficiary Base: PM-JAY targets the bottom 40% vulnerable and poor families identified by SECC 2011 / state food security registries, plus all senior citizens aged 70+ regardless of income. CGHS caters to serving and retired Central Government civil employees, pensioners, MPs, and their dependent family members.
+- Benefit Scope: PM-JAY provides up to Rs 5 lakh per family per year for secondary and tertiary inpatient hospitalization. CGHS provides comprehensive primary, outpatient (OPD) dispensaries, generic medicines, investigations, and secondary/tertiary inpatient treatments.
+- Cost: PM-JAY is 100% government-funded and free for beneficiaries. CGHS requires monthly payroll deductions from employees and subscription fees from pensioners.
+
+--------------------------------------------------------------------------------
+Q8. What documents are required to open a Sukanya Samriddhi Yojana (SSY) account?
+A8. 
+- Birth Certificate of the girl child (bearing child's name)
+- Identity Proof of parent/guardian (Aadhaar, PAN, Voter ID, Passport)
+- Address Proof of parent/guardian (Aadhaar, utility bill, passport)
+- Recent photograph of child and parent/guardian
+- Medical/birth order certificate from hospital in case of twin/triplet girl births.
+
+--------------------------------------------------------------------------------
+Q9. I am a 24-year-old unemployed graduate from an SC background looking to start a manufacturing unit. Which schemes provide financial backing?
+A9. 
+- Stand-Up India: Facilitates bank loans between Rs 10 lakh and Rs 1 crore for greenfield manufacturing enterprises specifically reserved for SC/ST and women entrepreneurs.
+- PMEGP (Special Category): Project loans up to Rs 50 lakh for manufacturing with a 35% margin money subsidy in rural areas (25% in urban areas), requiring only a 5% personal contribution.
+- Venture Capital Fund for Scheduled Castes (VCF-SC): Concessional equity/debt financing up to Rs 15 crore for SC-promoted enterprises.
+- PM Mudra Yojana: Collateral-free loans up to Rs 10-20 lakh under Kishore/Tarun tiers.
+
+--------------------------------------------------------------------------------
+Q10. Is an income tax payee eligible to receive the Rs 6,00,000 annual benefit under PM-KISAN?
+A10. No. Any individual who paid income tax in the last assessment year, or whose spouse/minor child is an income tax payee, is strictly excluded from PM-KISAN.
+
+--------------------------------------------------------------------------------
+Q11. Who can apply for the PM Vishwakarma scheme, and what trades are covered under it?
+A11. 
+- Eligibility: Artisans and craftspersons aged 18+ working with their hands and traditional tools in the unorganized sector on self-employment basis (one member per family, with no credit availed under PMEGP/Mudra/PM SVANidhi in the previous 5 years).
+- 18 Covered Trades: Carpenter (Suthar), Boat Maker, Armourer, Blacksmith (Lohar), Hammer and Tool Kit Maker, Locksmith, Sculptor (Moortikar/Stone carver), Stone Breaker, Goldsmith (Sonar), Potter (Kumhaar), Cobbler (Charmakar)/Shoemaker, Mason (Rajmistri), Basket/Mat/Broom Maker/Coir Weaver, Doll & Toy Maker (Traditional), Barber (Naai), Garland Maker (Malakaar), Washerman (Dhobi), Tailor (Darzi), and Fishing Net Maker.
+
+--------------------------------------------------------------------------------
+Q12. What is the subsidy percentage under PM Surya Ghar: Muft Bijli Yojana for a 2 kW residential rooftop solar system?
+A12. Under PM Surya Ghar: Muft Bijli Yojana, residential rooftop solar subsidies are structured as:
+- 1 kW capacity: Rs 30,000
+- 2 kW capacity: Rs 60,000 (providing roughly up to 60% of the benchmark system cost for the first 2 kW). For systems above 2 kW up to 3 kW, an additional Rs 18,000 is given, capping the maximum subsidy at Rs 78,000.
+
+--------------------------------------------------------------------------------
+Q13. What is the entry age and monthly contribution required to receive a Rs 3,000 monthly pension under Atal Pension Yojana (APY)?
+A13. 
+- Entry Age: 18 to 40 years.
+- Monthly Contribution: Varies according to joining age. If joining at age 18, the monthly contribution is Rs 126; at age 25 it is Rs 226; at age 30 it is Rs 347; at age 35 it is Rs 543; and at age 40 it is Rs 898 per month until reaching age 60.
+
+--------------------------------------------------------------------------------
+Q14. Can a street vendor get a collateral-free working capital loan under PM SVANidhi, and what is the interest subsidy?
+A14. Yes. Urban street vendors holding a Vending Certificate / Letter of Recommendation can access graduated collateral-free loans:
+- 1st Tranche: Up to Rs 10,000 (1-year repayment tenure)
+- 2nd Tranche: Up to Rs 20,000 (on timely repayment of 1st tranche)
+- 3rd Tranche: Up to Rs 50,000.
+- Interest Subsidy: 7% per annum credited directly to the borrower's bank account every quarter on timely repayment, alongside digital cashback up to Rs 1,200 per year.
+
+--------------------------------------------------------------------------------
+Q15. What are the eligibility criteria and maximum project cost allowed under PMEGP for manufacturing and service sectors?
+A15. 
+- Eligibility: Indian citizens aged 18+; educational qualification of at least Class 8 pass for manufacturing units above Rs 10 lakh and service units above Rs 5 lakh. No income limit.
+- Maximum Project Cost:
+  - Manufacturing Sector: Rs 50,00,000 (up to Rs 1 Crore for a second loan for enterprise upgradation).
+  - Service / Business Sector: Rs 20,00,000 (up to Rs 25 Lakh for a second loan for enterprise upgradation).
+
+--------------------------------------------------------------------------------
+Q16. Compare Pradhan Mantri Awas Yojana - Urban (PMAY-U) and Pradhan Mantri Awas Yojana - Gramin (PMAY-G) in terms of assistance amount and target beneficiaries.
+A16. 
+- Target Beneficiaries: PMAY-G targets rural households living in kutcha/dilapidated houses or without shelter identified via SECC 2011 and Awaas+ list. PMAY-U (PMAY-U 2.0) targets urban poor in EWS, LIG, and MIG categories who do not own a pucca house in India.
+- Assistance Amount:
+  - PMAY-G: Direct grant of Rs 1,20,000 in plain areas and Rs 1,30,000 in hilly/difficult/northeastern states/IAP districts, plus 90/95 days of unskilled wages under MGNREGA (~Rs 25,000) and Rs 12,000 for toilet under SBM-G.
+  - PMAY-U: Up to Rs 1.5 - 2.5 lakh direct assistance for Beneficiary-Led Construction (BLC), or interest subsidies (up to Rs 1.80 - 2.67 lakh) on home loans under the Credit Linked Subsidy Scheme / Interest Subsidy Scheme.
+
+--------------------------------------------------------------------------------
+Q17. I am an artisan working in traditional pottery. Can I get collateral-free credit and toolkit incentives from the central government?
+A17. Yes, under the PM Vishwakarma Scheme (Potter/Kumhaar is one of the 18 covered trades):
+- Toolkit Incentive: E-voucher / digital grant of Rs 15,000.
+- Skill Training: 5-7 days basic training with a daily stipend of Rs 500, plus advanced training.
+- Collateral-Free Enterprise Credit: Tranche 1 up to Rs 1,00,000 (18-month tenure) and Tranche 2 up to Rs 2,00,000 (30-month tenure) at a concessional interest rate of 5% (with an 8% subvention borne by the government).
+
+--------------------------------------------------------------------------------
+Q18. What is the premium rate and coverage limit under Pradhan Mantri Suraksha Bima Yojana (PMSBY)?
+A18. 
+- Premium Rate: Rs 20 per year per subscriber (auto-debited in a single installment from the linked bank/post office account before 1st June annually).
+- Coverage Limit: Rs 2,00,000 for accidental death or total permanent disability (loss of both eyes, both hands, or both feet); Rs 1,00,000 for permanent partial disability (loss of sight of one eye or loss of use of one hand/foot).
+
+--------------------------------------------------------------------------------
+Q19. What documents do I need to register for the e-Shram portal, and what benefits does an unorganized worker get?
+A19. 
+- Required Documents: Aadhaar number, Aadhaar-linked active mobile number, and active bank account number with IFSC.
+- Benefits: 12-digit Universal Account Number (UAN) card valid pan-India; seamless portability of social security benefits; direct access to PMSBY accidental insurance cover during enrollment drives; automated targeting for DBT cash assistance during emergencies/disasters; and integrated access to employment and skilling portals (NCS, ASEEM).
+
+--------------------------------------------------------------------------------
+Q20. Who is eligible to receive benefits under Pradhan Mantri Matru Vandana Yojana (PMMVY) for first and second children?
+A20. 
+- Eligibility: Pregnant women and lactating mothers aged 19+ belonging to socially or economically vulnerable groups (e.g., family income < Rs 8 lakh/year, SC/ST, BPL/E-Shram/MGNREGA/PM-JAY cardholders, Divyangjan). Regular Central/State Govt and PSU employees are excluded.
+- First Child: Rs 5,000 paid in 2 installments (Rs 3,000 at early ANC registration; Rs 2,000 after child birth and primary vaccination).
+- Second Child: Rs 6,000 in a single installment after birth and vaccination, provided the second child is a girl child.
+
+--------------------------------------------------------------------------------
+Q21. What is the difference between PM-SYM (Pradhan Mantri Shram Yogi Maan-dhan) and Atal Pension Yojana (APY)?
+A21. 
+- Beneficiary Profile: PM-SYM is strictly for unorganized workers aged 18-40 earning up to Rs 15,000/month who are not members of EPFO, ESIC, or NPS and not income tax payers. APY is open to any Indian citizen aged 18-40 holding a savings bank account (since October 2022, income tax payers are barred).
+- Pension Choice: PM-SYM has a single fixed pension of Rs 3,000/month after age 60. APY offers 5 distinct monthly pension slabs: Rs 1,000, Rs 2,000, Rs 3,000, Rs 4,000, or Rs 5,000.
+- Contribution Sharing: In PM-SYM, the Central Government matches 50% of the worker's monthly contribution for life. In APY, the subscriber pays the full actuarial contribution table.
+
+--------------------------------------------------------------------------------
+Q22. I am a small farmer whose paddy crop was damaged due to heavy unseasonal rains. How can I claim compensation under PMFBY?
+A22. 
+- Step 1: Intimate the crop loss within 72 hours of the calamity through the Crop Insurance App, toll-free number 14447, bank branch, or local agricultural officer.
+- Step 2: Provide policy number, crop name, affected acreage, and date of damage.
+- Step 3: A joint survey is conducted by an insurance company representative and state agriculture official within 7-10 days to quantify loss.
+- Step 4: The claim amount is assessed and credited directly to your Aadhaar-linked bank account.
+
+--------------------------------------------------------------------------------
+Q23. What are the mandatory documents required to apply for an Ayushman Bharat Golden Card?
+A23. 
+- Aadhaar Card (mandatory for identity and biometric e-KYC).
+- Ration Card / PM-JAY Family ID / Ration/SECC entitlement letter proving family inclusion.
+- Active mobile number for OTP confirmation.
+
+--------------------------------------------------------------------------------
+Q24. How does the Stand-Up India scheme support women and SC/ST entrepreneurs, and what is the minimum loan amount?
+A24. 
+- Support Mechanism: Mandates every branch of scheduled commercial banks to extend bank credit to at least one SC/ST borrower and at least one woman borrower for establishing a greenfield (new) enterprise in manufacturing, services, agri-allied, or trading.
+- Loan Amount: Minimum Rs 10,00,000 up to a maximum of Rs 1,00,00,000 (covering up to 85% of total project cost).
+
+--------------------------------------------------------------------------------
+Q25. Who is not eligible for PM-KISAN?
+A25. 
+1. Institutional landholders.
+2. Present or former holders of constitutional posts.
+3. Former/present Ministers, MPs, MLAs, MLCs, Mayors, and District Panchayat Chairpersons.
+4. Serving or retired officers/employees of Central/State Govts, Ministries, Departments, and PSUs (except Group D / Multi-Tasking Staff).
+5. All retired pensioners drawing a monthly pension of Rs 10,000 or more.
+6. All persons who paid Income Tax in the last assessment year.
+7. Registered professionals (Doctors, Engineers, Lawyers, Chartered Accountants, Architects).
+
+--------------------------------------------------------------------------------
+Q26. What financial assistance does Nikshay Poshan Yojana provide to TB patients, and is it transferred via DBT?
+A26. 
+- Assistance: Rs 500 per month (revised upwards to Rs 1,000/month under enhanced nutritional support guidelines) for the full duration of anti-TB treatment.
+- DBT Transfer: Yes, 100% of the incentive is transferred directly into the patient's Aadhaar-seeded bank account through the centralized Ni-kshay platform.
+
+--------------------------------------------------------------------------------
+Q27. Compare Kisan Credit Card (KCC) and Agriculture Infrastructure Fund (AIF) in terms of purpose and interest subvention.
+A27. 
+- Purpose: KCC funds short-term cultivation expenses, post-harvest costs, and maintenance of farm assets/allied activities (dairy, poultry, fisheries). AIF finances medium-to-long term post-harvest management infrastructure and community farming assets (cold storage, warehouses, silos, grading/sorting packs).
+- Loan Term: KCC is revolving working capital valid for 5 years with annual review; AIF offers term loans up to 10 years (with moratorium up to 2 years).
+- Interest Subvention: KCC provides 2% interest subvention and 3% prompt repayment incentive on crop loans up to Rs 3 lakh (effective 4% p.a.). AIF provides 3% per annum interest subvention on capital loans up to Rs 2 crore for up to 7 years, along with CGTMSE fee coverage.
+
+--------------------------------------------------------------------------------
+Q28. What are the eligibility criteria for students applying for the Central Sector Scheme of Scholarship for College and University Students (CSSS)?
+A28. 
+- Educational Merit: Must score above the 80th percentile of successful candidates in the respective stream in the Class 12 (10+2) board examination.
+- Enrolment: Enrolled in regular (full-time, non-distance) degree/professional courses at recognized colleges/universities approved by UGC/AICTE.
+- Income Limit: Total annual parental/family income must not exceed Rs 4,50,000.
+- Exclusivity: Beneficiary must not be availing of any other state or central government scholarship.
+
+--------------------------------------------------------------------------------
+Q29. I am a rural woman wanting to form a Self-Help Group (SHG) to start a micro-enterprise. How does DAY-NRLM assist us?
+A29. DAY-NRLM provides:
+- Revolving Fund (RF): Rs 20,000 to Rs 30,000 per SHG to initiate internal lending among members.
+- Community Investment Support Fund (CIF): Up to Rs 1.5 lakh per SHG routed through Village Organizations for expanding livelihood activities.
+- Collateral-Free Bank Credit: Bank linkage loans without collateral up to Rs 10 lakh (and up to Rs 20 lakh for standard SHGs).
+- Interest Subvention: Concessional interest rate of 7% on loans up to Rs 3 lakh, with an additional 3% subvention for prompt repayment (effective interest 4%).
+- Capacity building, enterprise training, and market access through SARAS Melas and GeM/e-commerce.
+
+--------------------------------------------------------------------------------
+Q30. What is the maximum deposit allowed and current interest rate under the Mahila Samman Savings Certificate (MSSC)?
+A30. 
+- Maximum Deposit: Rs 2,00,000 (minimum Rs 1,000 in multiples of Rs 100).
+- Interest Rate: 7.5% per annum, compounded quarterly and paid out upon maturity.
+- Tenure: Fixed 2-year tenure for women or in the name of a minor girl child through guardian.
+
+--------------------------------------------------------------------------------
+Q31. What is the eligibility condition for availing LPG connections under Pradhan Mantri Ujjwala Yojana (PMUY / Ujjwala 2.0)?
+A31. 
+- Applicant must be an adult woman (aged 18+) from a poor household.
+- Beneficiary must belong to eligible deprived lists: SC/ST, PMAY-G beneficiaries, Antyodaya Anna Yojana (AAY), Most Backward Classes (MBC), Forest Dwellers, Tea/Ex-Tea garden tribes, River Island dwellers, or verified under the 14-point poverty declaration.
+- No member of the applicant's household should already possess an active domestic LPG connection with any Oil Marketing Company.
+- Benefit covers a deposit-free LPG cylinder, pressure regulator, low-pressure hose, first cylinder refill, and a gas stove free of charge.
+
+--------------------------------------------------------------------------------
+Q32. What documents are required to apply for a Mudra loan under the Shishu category?
+A32. 
+- Proof of Identity: Voter ID, Aadhaar Card, PAN Card, Driving Licence, or Passport.
+- Proof of Residence: Recent utility bill, Aadhaar, Voter ID, or domicile certificate.
+- Two recent passport-size photographs of the entrepreneur.
+- Quotation / Proforma Invoice of machinery, equipment, or inventory to be purchased.
+- Proof of business identity/address (Udyam registration or municipal trade license, if applicable).
+- Caste/Category certificate (if claiming SC/ST/OBC status).
+
+--------------------------------------------------------------------------------
+Q33. Am I eligible for PM-JANMAN if I belong to a Particularly Vulnerable Tribal Group (PVTG)? What components are included?
+A33. Yes. Members of the 75 notified PVTG communities residing across 18 States and Union Territories are eligible.
+- Included Components: Pucca housing (enhanced PMAY-G grant of Rs 2.39 lakh per house), piped drinking water to every household, all-weather village road connectivity, grid and off-grid solar electrification, mobile medical units, community health centres, Anganwadi nutrition hubs, multi-purpose community centres, 4G mobile towers, and vocational training/Van Dhan Vikas Kendras.
+
+--------------------------------------------------------------------------------
+Q34. What is the difference between PMMY (Mudra) and Stand-Up India schemes?
+A34. 
+- Beneficiary Focus: Mudra is universal and accessible to all micro-enterprises and non-corporate small business owners; Stand-Up India is exclusively earmarked for SC, ST, and Women entrepreneurs.
+- Quantum of Loan: Mudra caters to smaller loans from Rs 10,000 up to Rs 10 Lakh (extended to Rs 20 Lakh under Tarun Plus); Stand-Up India funds larger projects between Rs 10 Lakh and Rs 1 Crore.
+- Unit Stage: Mudra finances both new and existing businesses for expansion; Stand-Up India strictly finances greenfield (newly established) enterprises.
+
+--------------------------------------------------------------------------------
+Q35. What is the maximum age limit and qualification required to apply for PMKVY 4.0 training programs?
+A35. 
+- Age Limit: Generally 15 to 45 years (for Recognition of Prior Learning / specialized upskilling, extended up to 59 years).
+- Qualification: Depends entirely on the specific Job Role / National Skills Qualifications Framework (NSQF) level (ranging from 5th/8th pass to 10th/12th, ITI, or graduates).
+- Cost: 100% free government-funded skill training, assessment, and certification.
+
+--------------------------------------------------------------------------------
+Q36. I am a handloom weaver in Varanasi. Which central schemes can provide me with subsidized yarn and modern loom upgrades?
+A36. 
+- Raw Material Supply Scheme (RMSS): Provides subsidized hank yarn with freight reimbursement and a 15% price subsidy on cotton, domestic silk, and wool yarn.
+- National Handloom Development Programme (NHDP) - Hathkargha Samvardhan Sahayata (HSS): Provides up to 90% financial assistance for upgrading pit looms to frame looms, electronic jacquards, and pneumatic looms.
+- Weavers Mudra Scheme: Concessional working capital loans up to Rs 2 lakh at a subsidized 6% interest rate with margin money assistance up to Rs 25,000.
+
+--------------------------------------------------------------------------------
+Q37. How can a person apply for an assistive device under the ADIP Scheme for Persons with Disabilities (Divyangjan)?
+A37. 
+- Eligibility: Person with benchmark disability of 40% or more, possessing a UDID card or disability certificate, with monthly income not exceeding Rs 30,000 (100% subsidy for income up to Rs 22,500/month; 50% subsidy for income between Rs 22,501 and Rs 30,000).
+- Application: Apply directly at ALIMCO distribution assessment camps, District Disability Rehabilitation Centres (DDRC), or online on the ADIP portal submitting: Disability Certificate/UDID, income certificate, Aadhaar card, and residence proof.
+
+--------------------------------------------------------------------------------
+Q38. What are the criteria to be covered under the Antyodaya Anna Yojana (AAY) category under the National Food Security Act (NFSA)?
+A38. 
+- Poorest of the poor families selected from BPL lists.
+- Landless agricultural laborers, marginal farmers, rural artisans/craftsmen, destitute widows, terminally ill persons, disabled persons, and senior citizens aged 60+ without family or societal support.
+- Primitive tribal households.
+- Benefit: 35 kg of free foodgrains (rice/wheat/coarse grains) per family per month under PMGKAY.
+
+--------------------------------------------------------------------------------
+Q39. Does PM-JAY cover pre-existing diseases from day one of hospitalization?
+A39. Yes. Ayushman Bharat PM-JAY covers all pre-existing medical conditions and chronic illnesses from day one of card activation, with zero waiting periods, zero exclusions, and completely cashless treatment up to Rs 5 lakh per family per year.
+
+--------------------------------------------------------------------------------
+Q40. What is the credit guarantee coverage provided under CGTMSE for micro and small enterprises?
+A40. 
+- Guarantee Extent: 75% to 85% of the default risk (up to 85% for micro-enterprises borrowing up to Rs 5 lakh, women-owned units, SC/ST entrepreneurs, and ZED-certified units; 75% for standard MSE loans).
+- Loan Limit: Covers collateral-free credit facilities up to Rs 5.00 Crore per eligible borrower unit.
+
+--------------------------------------------------------------------------------
+Q41. Compare PM-KISAN with Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMDY).
+A41. 
+- Scheme Goal: PM-KISAN provides immediate annual income support; PM-KMDY provides old-age social security pension after age 60.
+- Financial Payout: PM-KISAN pays Rs 6,000 per year (3 installments of Rs 2,000); PM-KMDY pays an assured lifelong pension of Rs 3,000 per month.
+- Contribution Model: PM-KISAN is 100% non-contributory funded by the Central Govt; PM-KMDY requires voluntary monthly contributions of Rs 55 to Rs 200 (matched 1:1 by Central Govt).
+- Landholding Requirement: PM-KISAN covers all cultivable landholding farmer families; PM-KMDY is strictly limited to small and marginal farmers owning up to 2 hectares of cultivable land.
+
+--------------------------------------------------------------------------------
+Q42. What documents must be submitted to claim the death benefit under PMJJBY?
+A42. 
+- Duly completed PMJJBY Claim Form and Discharge Receipt
+- Certified copy of the Death Certificate of the insured subscriber
+- Nominee's KYC documents (Aadhaar card, PAN, and address proof)
+- Nominee's bank passbook copy or cancelled cheque showing account number and IFSC
+- Guardianship certificate if the registered nominee is a minor.
+
+--------------------------------------------------------------------------------
+Q43. I run a micro-food processing enterprise at home. Can I get 35% credit-linked capital subsidy under the PMFME scheme?
+A43. Yes. Under the PM Formalization of Micro food processing Enterprises (PMFME) Scheme:
+- Existing individual micro food processing enterprises can secure a credit-linked capital subsidy of 35% of the eligible project cost, capped at a maximum of Rs 10,00,000 per enterprise.
+- The entrepreneur must provide a minimum 10% equity contribution, with the remaining project balance financed through a commercial bank loan.
+
+--------------------------------------------------------------------------------
+Q44. Who is eligible to apply for Prime Minister's Research Fellowship (PMRF), and what is the monthly stipend?
+A44. 
+- Eligibility: Candidates who completed or are in final year of B.Tech/M.Tech/M.Sc programs at IISc/IITs/NITs/IISERs/Central Universities with minimum 8.0 CGPA (or a minimum GATE score of 650 for graduates of other recognized Indian universities) and secured admission into a direct Ph.D. program at a PMRF granting institution.
+- Monthly Stipend: Rs 70,000/month for Years 1 and 2; Rs 75,000/month for Year 3; Rs 80,000/month for Years 4 and 5; plus a research contingency grant of Rs 2,00,000 per annum for five years.
+
+--------------------------------------------------------------------------------
+Q45. What are the subsidy provisions for installing solar agriculture pumps under PM-KUSUM Component-B?
+A45. 
+- Component Scope: Installation of individual standalone off-grid solar agriculture pumps up to 7.5 HP.
+- Subsidy Breakdown:
+  - Central Financial Assistance (CFA): 30% of benchmark cost.
+  - State Government Subsidy: 30% of benchmark cost.
+  - Farmer Contribution: 40% (of which up to 30% can be availed as a bank loan, requiring only 10% upfront cash payment).
+  - In Northeastern states, Jammu & Kashmir, Ladakh, Himachal Pradesh, Uttarakhand, and Island UTs, CFA is 50%, State 30%, and Farmer contribution is 20%.
+
+--------------------------------------------------------------------------------
+Q46. Can government pensioners or their spouses avail benefits under Ayushman Bharat PM-JAY?
+A46. Under general PM-JAY rules, government pensioners entitled to official institutional medical schemes (such as CGHS, ECHS, or state government employee medical coverage) are excluded. However, under the expanded Ayushman Bharat policy, all senior citizens aged 70 years and above are eligible for a distinct top-up cover of Rs 5 lakh per year, but must choose between PM-JAY and their existing statutory healthcare benefit (CGHS/ECHS).
+
+--------------------------------------------------------------------------------
+Q47. What documents are required to enroll in the National Apprenticeship Promotion Scheme (NAPS)?
+A47. 
+- Aadhaar Card
+- Educational / Technical qualification certificates (10th/12th/ITI/Diploma/Degree mark sheets)
+- Bank Account Passbook / Cancelled Cheque (Aadhaar-seeded for DBT stipend share)
+- Passport-sized photograph
+- Active email ID and mobile number for verification on the Apprenticeship India portal.
+
+--------------------------------------------------------------------------------
+Q48. What is the difference between National Social Assistance Programme (NSAP) pensions and PM-SYM?
+A48. 
+- Scheme Nature: NSAP (such as IGNOAPS) is a 100% non-contributory welfare safety net funded by government for destitute BPL citizens; PM-SYM is a contributory pension fund where the beneficiary and central government contribute 50:50 monthly.
+- Eligibility Group: NSAP targets destitute elderly individuals (aged 60+), widows, and persons with severe disabilities living below poverty line. PM-SYM targets active unorganized workers aged 18-40 earning up to Rs 15,000/month.
+- Pension Quantum: NSAP provides Rs 200–500 per month basic central assistance (augmented by state top-ups); PM-SYM guarantees an assured fixed pension of Rs 3,000 per month post age 60.
+
+--------------------------------------------------------------------------------
+Q49. I am a fisherman wanting to buy an insulated ice box and a motorized fishing boat. Which components of PMMSY support this?
+A49. Under Pradhan Mantri Matsya Sampada Yojana (PMMSY):
+- Beneficiary-oriented sub-schemes finance the acquisition of motorized/traditional fishing craft and post-harvest quality infrastructure (insulated ice boxes, three-wheeler/two-wheeler fish transport units with ice boxes).
+- Subsidy Assistance: Up to 40% of the project unit cost for General category beneficiaries and up to 60% of the project unit cost for SC, ST, and Women beneficiaries.
+
+--------------------------------------------------------------------------------
+Q50. What is the interest subsidy under the Credit Linked Subsidy Scheme (CLSS) component of PMAY-U?
+A50. 
+- Under original CLSS: EWS/LIG borrowers (annual household income up to Rs 3 lakh and Rs 6 lakh) received a 6.5% interest subsidy on housing loans up to Rs 6,00,000 for a tenure of up to 20 years (total upfront NPV benefit ~Rs 2.67 lakh).
+- Under PMAY-U 2.0 (Interest Subsidy Scheme): EWS/LIG/MIG families purchasing or constructing their first pucca home receive an interest subsidy of 4.0% on home loans up to Rs 25 lakh (for house values up to Rs 35 lakh), disbursed in 5 annual installments up to a total subsidy of Rs 1.80 lakh.
+
+--------------------------------------------------------------------------------
+Q51. Who is eligible for the SMILE scheme (Support for Marginalised Individuals for Livelihood and Enterprise)?
+A51. The SMILE scheme covers two target groups:
+1. Transgender Persons: Holding a valid Transgender Certificate issued by the National Portal for Transgender Persons.
+2. Persons Engaged in the Act of Begging: Identified through city/municipal surveys.
+- Benefits: Comprehensive healthcare (Ayushman Bharat TG package), scholarship support, skill training via PM-DAKSH, shelter homes (Garima Greh), and rehabilitation services.
+
+--------------------------------------------------------------------------------
+Q52. What are the eligibility guidelines for availing an education loan subsidy under the Central Sector Interest Subsidy (CSIS) scheme?
+A52. 
+- Income Criterion: Gross parental/family income must not exceed Rs 4,50,000 per annum from all sources (supported by authorized income certificate).
+- Enrolment: Admission secured in approved professional or technical degree/diploma courses in recognized higher educational institutions in India.
+- Loan Scheme: Education loan taken under the IBA Model Education Loan Scheme from a scheduled commercial bank.
+- Subsidy Benefit: 100% full interest subsidy borne by the Central Government during the entire moratorium period (course duration + 1 year).
+
+--------------------------------------------------------------------------------
+Q53. Compare Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY) and PMKVY.
+A53. 
+- Target Demographic: DDU-GKY strictly focuses on poor rural youth aged 15-35 (up to 45 years for SC/ST/Women/PWD); PMKVY targets all urban and rural youth, school/college dropouts, and informal laborers.
+- Placement Mandate: DDU-GKY is a placement-benchmarked scheme requiring project implementation agencies to place at least 70% of trained youth in formal wage employment with minimum defined salaries; PMKVY balances wage placement with self-employment, short-term courses, and Recognition of Prior Learning (RPL).
+- Duration and Setup: DDU-GKY emphasizes longer-duration, residential, intensive skill programs; PMKVY mainly operates short-term modular skill certification (STT).
+
+--------------------------------------------------------------------------------
+Q54. What are the benefits and validity of the UDID (Unique Disability ID) card issued by the Ministry of Social Justice?
+A54. 
+- Benefits: Single pan-India accepted proof of disability eliminating the need to carry physical state medical certificates; provides streamlined access to central and state welfare benefits, ADIP assistive aids, rail and bus travel concessions, educational reservations, and government employment quotas.
+- Validity: Permanent validity for permanent/non-progressive disabilities; temporary validity (e.g. 5 years) for conditions subject to change or rehabilitation, requiring re-evaluation upon expiration.
+
+--------------------------------------------------------------------------------
+Q55. I am a dairy farmer wanting to establish a cattle breeding farm. Can I avail subsidies under the Rashtriya Gokul Mission?
+A55. Yes. Under the Breed Multiplication Farm component of the Rashtriya Gokul Mission:
+- A capital subsidy of 50% of the total project cost, up to a maximum ceiling of Rs 2.00 Crore, is provided to private entrepreneurs, dairy farmers, cooperatives, and FPOs to establish modern breed multiplication farms with high-genetic-merit indigenous bovine breeds.
+- The remaining 50% must be arranged through bank loan or owner's equity.
+
+--------------------------------------------------------------------------------
+Q56. What are the exclusion criteria for Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)?
+A56. 
+1. Monthly income exceeding Rs 15,000.
+2. Membership or coverage under statutory social security schemes: EPFO, ESIC, or NPS (Govt. funded).
+3. Any individual who is an Income Tax payee.
+4. Age below 18 years or above 40 years.
+
+--------------------------------------------------------------------------------
+Q57. What documents are required to apply for PM SVANidhi loans?
+A57. 
+- Aadhaar Card
+- Certificate of Vending (CoV) / Identity Card issued by the Urban Local Body (ULB) / Town Vending Committee (TVC), or Letter of Recommendation (LoR)
+- Bank Account Passbook / Statement
+- Mobile number linked with Aadhaar.
+
+--------------------------------------------------------------------------------
+Q58. What is the maximum assistance available under Rashtriya Arogya Nidhi (RAN) for patients suffering from life-threatening diseases?
+A58. 
+- Standard RAN Assistance: Financial grant up to Rs 15,00,000 for poor patients living below the state poverty line suffering from life-threatening major diseases requiring treatment at empanelled Central Government hospitals / AIIMS institutes.
+- Rare Disease Component: Under the National Policy for Rare Diseases component of RAN, financial assistance up to Rs 50,00,000 is provided for treatment at designated Centre of Excellence (CoE) hospitals.
+
+--------------------------------------------------------------------------------
+Q59. How does the National Means-cum-Merit Scholarship Scheme (NMMSS) select beneficiaries, and what is the scholarship amount?
+A59. 
+- Selection Process: Through a state-level competitive examination (comprising Mental Ability Test - MAT and Scholastic Aptitude Test - SAT) held for Class 8 students who secured minimum 55% marks (50% for SC/ST) and whose parental annual income does not exceed Rs 3,50,000.
+- Scholarship Amount: Rs 12,000 per annum (Rs 1,000 per month) paid through DBT via National Scholarship Portal for 4 years (Class 9 to Class 12).
+
+--------------------------------------------------------------------------------
+Q60. Am I eligible for the PM-DAKSH scheme for upskilling and training if I belong to OBC/EBC category?
+A60. Yes, subject to family income ceilings:
+- Other Backward Classes (OBC): Eligible if annual family income is below Rs 3,00,000.
+- Economically Backward Classes (EBC): Eligible if annual family income is below Rs 1,00,000.
+- De-notified, Nomadic, and Semi-Nomadic Tribes (DNT): Eligible with no income limit.
+- Benefits: Free upskilling/reskilling, short-term and long-term skill courses, with a monthly stipend of Rs 1,000–1,500 for non-residential training, plus wage/self-employment placement support.
+
+--------------------------------------------------------------------------------
+Q61. What is the difference between PMUY (Ujjwala Yojana) and PAHAL (DBTL)?
+A61. 
+- PMUY: A targeted social welfare scheme providing a new, deposit-free LPG gas connection (cylinder, regulator, hose, first refill, and stove) specifically to underprivileged women from poor/deprived households.
+- PAHAL (DBTL): A universal LPG subsidy transfer mechanism covering all domestic LPG consumer households across India, transferring the standard central subsidy directly into bank accounts whenever a subsidized domestic cylinder is booked and purchased at market price.
+
+--------------------------------------------------------------------------------
+Q62. What financial incentives are offered under the National Beekeeping & Honey Mission (NBHM) to individual farmers?
+A62. 
+- Subsidies of 40% to 50% on the cost of bee colonies, beehive boxes, honey extractors, comb foundation sheets, and beekeeping equipment.
+- Grants up to 75%–100% for capacity building, specialized beekeeping training, setting up custom hiring centres, disease diagnostic facilities, and honey collection/processing units via FPOs and beekeeper clusters.
+
+--------------------------------------------------------------------------------
+Q63. I am a 65-year-old living below the poverty line without family support. Am I eligible for the Indira Gandhi National Old Age Pension Scheme (IGNOAPS)?
+A63. Yes.
+- Eligibility: Age 60 years or above and belonging to a household verified Below the Poverty Line (BPL) according to state/central criteria.
+- Assistance: Central contribution of Rs 200 per month for beneficiaries aged 60 to 79 years (raised to Rs 500 per month upon reaching age 80), combined with the mandatory monthly top-up provided by the respective state government (raising the actual payout to between Rs 1,000 and Rs 2,500+ per month depending on the state).
+
+--------------------------------------------------------------------------------
+Q64. What documents are required for an MSME to obtain ZED (Zero Defect Zero Effect) certification subsidy?
+A64. 
+- Udyam Registration Certificate (URC)
+- Aadhaar number of the authorized enterprise owner/director
+- Enterprise bank account details and cancelled cheque
+- Self-declaration and uploaded proof on the ZED portal for Bronz/Silver/Gold level parameters.
+
+--------------------------------------------------------------------------------
+Q65. Who can enroll their daughter in Sukanya Samriddhi Yojana, and what is the minimum annual deposit requirement?
+A65. 
+- Enrollment: Natural or legal guardian in the name of a girl child from her birth up to the age of 10 years (maximum 2 girl children per family, or more in the case of twin/triplet daughters).
+- Minimum Annual Deposit: Rs 250 per financial year (maximum Rs 1,50,000 per financial year) for 15 years from account opening, maturing after 21 years (or upon marriage after age 18).
+
+--------------------------------------------------------------------------------
+Q66. Compare the post-matric scholarship scheme for SC students and the Pre-Matric Scholarship Scheme.
+A66. 
+- Educational Level: Pre-Matric SC scholarship caters to Class 9 and 10 students; Post-Matric SC scholarship supports students in Class 11, Class 12, ITI, Diploma, Undergraduate, Postgraduate, and Doctoral studies.
+- Income Ceiling: Both have an annual parental/family income ceiling of Rs 2,50,000.
+- Financial Benefit: Pre-Matric provides a fixed annual academic grant (~Rs 3,500 - 7,000/year); Post-Matric covers 100% non-refundable mandatory college tuition/registration fees plus monthly maintenance allowances categorized by course tier through DBT.
+
+--------------------------------------------------------------------------------
+Q67. Can an existing business owner apply for a loan under PMEGP to expand their existing unit?
+A67. Yes. Under the PMEGP Second Loan for Upgradation component:
+- Existing well-performing PMEGP, Mudra, or REGP units that have repaid their initial bank loan without default can apply for a second loan up to Rs 1.00 Crore for manufacturing and up to Rs 25 Lakh for services.
+- Eligible for an additional margin money subsidy of 15% (20% for units in NER, hilly, or island regions).
+
+--------------------------------------------------------------------------------
+Q68. What are the benefits of the PM Jan Dhan Yojana (PMJDY) zero-balance account, and what is the RuPay debit card insurance cover?
+A68. 
+- Account Benefits: Zero minimum balance requirement, interest on savings deposits, unhindered receipt of all government DBT welfare transfers, and overdraft (OD) facility up to Rs 10,000 for one adult member per household.
+- RuPay Insurance Cover: Complimentary Accidental Death and Total Disability insurance cover of Rs 2,00,000 for RuPay cards issued after August 28, 2018 (Rs 1,00,000 for cards issued earlier), conditional upon at least one successful financial or non-financial transaction in the preceding 90 days.
+
+--------------------------------------------------------------------------------
+Q69. I want to build a warehouse for agricultural storage. Can I get a 3% interest subvention under the Agriculture Infrastructure Fund (AIF)?
+A69. Yes. Warehouses, silos, cold storage units, and pack houses are primary eligible projects under AIF:
+- 3% per annum interest subvention on term loans up to Rs 2.00 Crore for a maximum tenure of 7 years.
+- Credit guarantee coverage is provided under CGTMSE with the guarantee fee fully absorbed by the government.
+
+--------------------------------------------------------------------------------
+Q70. What is the eligibility and application procedure for the Prime Minister's Scholarship Scheme (PMSS) for CAPF and Assam Rifles wards?
+A70. 
+- Eligibility: Dependent wards and unmarried widows of Central Armed Police Forces (BSF, CRPF, CISF, ITBP, SSB) and Assam Rifles personnel who died in harness/operational duties or became disabled due to service. Must be pursuing first recognized professional/technical degree courses (MBBS, B.Tech, BDS, MBA, MCA) with minimum 60% marks in 10+2 or Diploma.
+- Scholarship Amount: Rs 3,000 per month for girls (Rs 36,000/yr) and Rs 2,500 per month for boys (Rs 30,000/yr).
+- Application Procedure: Apply online through the National Scholarship Portal (NSP) with service certificates and verification from the respective force headquarter.
+
+--------------------------------------------------------------------------------
+Q71. What health services and generic medicines are offered through Pradhan Mantri Bhartiya Janaushadhi Pariyojana (PMBJP) centers?
+A71. 
+- Supplies quality-tested generic medicines, surgical devices, and nutraceuticals at prices 50% to 90% lower than equivalent branded medicines.
+- Product basket includes over 2,046 generic medicines covering all major therapeutic segments, 300 surgical consumables, and Jan Aushadhi Suvidha biodegradable sanitary napkins at Rs 1 per pad.
+
+--------------------------------------------------------------------------------
+Q72. What is the role of Common Service Centres (CSCs) in applying for central government welfare schemes?
+A72. CSCs function as village-level rural digital delivery kiosks operated by Village Level Entrepreneurs (VLEs):
+- Provide assisted access to search schemes on myScheme portal.
+- Conduct biometric e-KYC, Aadhaar authentication, and document scanning for PM-KISAN, PM-JAY Ayushman cards, e-Shram registration, PM SVANidhi, and pension schemes.
+- Enable direct benefit tracking and grievance redressal for rural citizens without internet or digital literacy.
+
+--------------------------------------------------------------------------------
+Q73. Who is eligible for the Mission Vatsalya child protection scheme, and how are children in difficult circumstances assisted?
+A73. 
+- Eligibility: Children in Need of Care and Protection (CNCP) and Children in Conflict with Law (CCL), including orphans, abandoned/surrendered children, street children, victims of child labor, trafficking, violence, or natural disasters up to 18 years of age.
+- Assistance: Institutional care in Child Care Institutions (shelter, nutrition, education, healthcare); and Non-institutional community care through monthly financial sponsorship of Rs 4,00,0 per child for family/kinship foster care and aftercare till age 21.
+
+--------------------------------------------------------------------------------
+Q74. Compare Sovereign Gold Bond (SGB) Scheme and Gold Monetization Scheme (GMS).
+A74. 
+- Asset Nature: SGB is a government debt security denominated in grams of gold issued by the RBI (paper/demat gold investment without holding physical gold). GMS is a bank deposit scheme where citizens deposit idle physical jewellery or gold coins into a bank account.
+- Yield & Return: SGB pays a guaranteed semi-annual interest of 2.50% per annum on the initial issue price plus capital appreciation linked to market gold price. GMS pays interest (0.50% to 2.50% p.a. depending on short/medium/long term deposit) and returns physical gold or cash equivalent at maturity.
+- Taxation: SGB capital gains on redemption at maturity (8 years) are 100% tax-free for individuals. GMS capital gains and interest earnings are also exempt from income tax and capital gains tax.
+
+--------------------------------------------------------------------------------
+Q75. I am an unorganized construction worker with a monthly income of Rs 12,000. Can I enroll in both PM-SYM and Ayushman Bharat?
+A75. Yes.
+- You meet all PM-SYM eligibility conditions (unorganized worker aged 18-40, monthly income under Rs 15,000, not enrolled in EPFO/ESIC, non-taxpayer).
+- As an unorganized construction worker (registered on e-Shram or under State Building & Other Construction Workers Welfare Board), you qualify under the deprivation criteria for Ayushman Bharat PM-JAY for Rs 5 lakh annual family hospitalization. Both schemes run independently and can be availed concurrently.
+
+--------------------------------------------------------------------------------
+Q76. What are the subsidy norms for electric vehicles under the PM E-DRIVE / FAME scheme?
+A76. Under the PM E-DRIVE scheme:
+- Electric Two-Wheelers (e-2W): Financial demand incentive based on battery capacity at approximately Rs 5,000 per kWh for Year 1 (FY 2024-25), capped at a maximum of Rs 10,000 per vehicle (halved in FY 2025-26).
+- Electric Three-Wheelers (e-3W/e-rickshaws): Incentive of Rs 25,000 to Rs 50,000 depending on category and battery size.
+- Payout Mechanism: The incentive is reimbursed to certified EV manufacturers and provided as an upfront purchase price reduction directly to the consumer at the dealership invoice.
+
+--------------------------------------------------------------------------------
+Q77. What documents do farmers need to apply for the Paramparagat Krishi Vikas Yojana (PKVY) organic farming cluster?
+A77. 
+- Aadhaar Card
+- Land ownership record (RoR / 7/12 extract / Khasra-Khatauni) confirming land within the designated 20-hectare / 50-acre cluster
+- Bank account details (passbook copy with IFSC)
+- Cluster membership registration form and signed Participatory Guarantee System for India (PGS-India) organic farmer pledge.
+
+--------------------------------------------------------------------------------
+Q78. What is the difference between PM-JAY and Rashtriya Swasthya Bima Yojana (RSBY)?
+A78. 
+- Coverage Ceiling: RSBY offered a health cover of only Rs 30,000 per family per year; PM-JAY subsumed and expanded RSBY to provide Rs 5,00,000 per family per year.
+- Family Size Restriction: RSBY limited coverage to a maximum of 5 family members; PM-JAY imposes no cap on family size, gender, or age of family members.
+- Care Spectrum: RSBY primarily covered limited secondary basic hospitalization; PM-JAY provides comprehensive secondary and complex tertiary care across 1,900+ inpatient medical and surgical packages.
+
+--------------------------------------------------------------------------------
+Q79. How does the SFURTI scheme assist traditional khadi, coir, and village artisans in forming clusters?
+A79. SFURTI (Scheme of Fund for Regeneration of Traditional Industries) provides:
+- Funding up to Rs 2.50 Crore for Regular Clusters (up to 500 artisans) and up to Rs 5.00 Crore for Major Clusters (more than 500 artisans).
+- Financial grants to set up Common Facility Centres (CFCs), modern machinery, raw material banks, product design labs, packaging facilities, and value-addition centres.
+- 100% financial assistance for soft interventions (market promotion, capacity building, buyer-seller meets) and 90% (95% in NER/hilly regions) for hard interventions (machinery and infrastructure).
+
+--------------------------------------------------------------------------------
+Q80. I am a small-scale poultry farmer. Am I eligible to obtain a Kisan Credit Card (KCC) for animal husbandry and fisheries?
+A80. Yes. The Central Government extended KCC facilities to animal husbandry, poultry, dairy, and fisheries farmers:
+- Working capital credit up to Rs 2,00,000 at a subsidized interest rate of 4% per annum (with 2% interest subvention and 3% prompt repayment incentive).
+- For farmers who have both crop loans and allied poultry/dairy loans, the maximum composite credit limit eligible for interest subvention is Rs 3,00,000.
+- Collateral-free credit up to Rs 1.60 lakh (extendable to Rs 2.00 lakh under formal tie-up arrangements).
+
+--------------------------------------------------------------------------------
+Q81. What are the penalties or recovery procedures if an ineligible person claims PM-KISAN funds?
+A81. 
+- Detection: Detected through automated Aadhaar-linked cross-verification with Income Tax department filings and civil service pension databases.
+- Recovery: The ineligible recipient is issued a formal recovery notice directing them to refund all received installments into the State/Central PM-KISAN Recovery Account via Bharatkosh or dedicated state portal.
+- Legal Penalties: Failure to refund invites legal recovery proceedings under the Revenue Recovery Act, removal from the beneficiary registry, and potential prosecution for misrepresentation of identity and false declarations.
+
+--------------------------------------------------------------------------------
+Q82. Who qualifies as an 'Eligible Beneficiary' under Mission Shakti's Sambal sub-scheme (One Stop Centre, Women Helpline, Beti Bachao Beti Padhao)?
+A82. 
+- Any woman or adolescent girl facing violence, exploitation, sexual assault, domestic abuse, human trafficking, harassment, or emotional distress in public, private, or workplace domains.
+- No income, age, marital status, or caste criteria.
+- Services Provided: 24/7 emergency response via toll-free Women Helpline (181), immediate medical examination, police facilitation, legal aid/counseling, psycho-social support, and temporary shelter under one roof at One Stop Centres (OSCs).
+
+--------------------------------------------------------------------------------
+Q83. What is the maximum project cost and margin money subsidy for women entrepreneurs under PMEGP in rural areas?
+A83. 
+- Maximum Project Cost: Rs 50,00,000 for manufacturing projects; Rs 20,00,000 for service projects.
+- Beneficiary Equity: Only 5% of the total project cost (Special Category).
+- Margin Money Subsidy: 35% of the total project cost for units set up in rural areas (25% if located in urban areas).
+
+--------------------------------------------------------------------------------
+Q84. Can an individual family hold both a PMAY-G pucca house and subsidized sanitation support under Swachh Bharat Mission - Gramin (SBM-G)?
+A84. Yes. PMAY-G is specifically structured with programmatic convergence:
+- Every household sanctioned a PMAY-G house is entitled to receive an additional financial grant of Rs 12,000 for Individual Household Latrine (IHHL) construction under Swachh Bharat Mission - Gramin (SBM-G) or MGNREGA, alongside 90/95 days of unskilled labor wage support under MGNREGA, over and above the Rs 1,20,000/1,30,000 house grant.
+
+--------------------------------------------------------------------------------
+Q85. What are the eligibility and benefit terms under the PM Poshan Shakti Nirman (Mid-Day Meal) scheme for school children?
+A85. 
+- Target Eligibility: All children enrolled in government, government-aided schools, local body schools, and Special Training Centres / Madrasas studying from Pre-primary (Balvatika) up to Class 8.
+- Nutritional Norms (per child per school day):
+  - Primary (Classes 1–5): Minimum 450 calories and 12 grams of protein (using 100 grams of foodgrains).
+  - Upper Primary (Classes 6–8): Minimum 700 calories and 20 grams of protein (using 150 grams of foodgrains).
+  - Includes hot cooked nutritious meals with fortified rice, pulses, seasonal vegetables, edible oils, and supplementary nutrition (eggs, milk, chikki, or fruits where funded).
+================================================================================

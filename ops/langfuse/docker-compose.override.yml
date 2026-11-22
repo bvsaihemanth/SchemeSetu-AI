@@ -1,0 +1,83 @@
+# Stops the Langfuse stack publishing its internal services to the host.
+#
+# WHY
+#
+# Langfuse publishes nine host ports, and only one of them is the dashboard.
+# The other eight are its database, cache, object store and worker, exposed
+# for someone debugging Langfuse itself. We do not need any of them: the web
+# and worker containers reach those services over the compose network, by
+# name, which is unaffected by host publishing.
+#
+# Leaving them published cost real time:
+#
+#   postgres  127.0.0.1:5432  ->  bind: An attempt was made to access a socket
+#                                 in a way forbidden by its access permissions
+#
+# which stopped the whole stack -- postgres failed, so clickhouse never became
+# healthy, so web and worker never started, so the application reported
+# "nothing listening on 3000" with no mention of a port conflict anywhere.
+# On Windows that error is a port inside a Hyper-V/WSL reserved range (check
+# with `netsh interface ipv4 show excludedportrange protocol=tcp`) or a local
+# PostgreSQL already holding 5432. Either way, not publishing it makes the
+# question moot.
+#
+# It also removes three live clashes with this project's own stack:
+#
+#   minio 9090  vs  our Prometheus
+#   minio 9091  vs  our Prometheus after it was moved off 9090 -- the move
+#                   landed on MinIO's console, trading one clash for another
+#   web   3000  vs  our Grafana        (this one stands: Langfuse keeps 3000
+#                                       because NEXTAUTH_URL must match it,
+#                                       and Grafana moved to 3001)
+#
+# With this file, Langfuse publishes exactly one port and our stack keeps its
+# defaults apart from Grafana.
+#
+# `!reset []` rather than an empty list: Compose CONCATENATES `ports` across
+# files, so listing fewer ports adds nothing and removes nothing. The tag is
+# the documented way to clear a merged list, and needs Compose >= 2.24. If
+# yours is older it fails with a YAML error naming this line -- then upgrade
+# Docker Desktop, or edit the ports out of the Langfuse repo's own compose
+# file instead.
+#
+# To inspect one of these services anyway, go through the container rather
+# than re-publishing the port:
+#   docker exec -it langfuse-postgres-1 psql -U postgres -d langfuse
+#   docker exec -it langfuse-clickhouse-1 clickhouse-client
+#   docker exec -it langfuse-redis-1 redis-cli
+
+services:
+  # The dashboard. Deliberately NOT reset -- this is the one we need.
+  # langfuse-web keeps 3000:3000 from the base file.
+
+  postgres:
+    ports: !reset []
+
+  clickhouse:
+    ports: !reset []
+
+  redis:
+    ports: !reset []
+
+  # MinIO is MOVED rather than hidden, unlike the rest.
+  #
+  # Two Langfuse settings are browser-facing and point at this port:
+  #   LANGFUSE_S3_MEDIA_UPLOAD_ENDPOINT        (media attached to traces)
+  #   LANGFUSE_S3_BATCH_EXPORT_EXTERNAL_ENDPOINT  (CSV/JSON trace exports)
+  # Both generate presigned URLs the BROWSER fetches, so they cannot use the
+  # internal `minio:9000` name. Unpublishing MinIO would silently break trace
+  # exports -- which is how you would pull traces out for a Ragas eval set.
+  #
+  # 9190 because 9090 is our Prometheus and 9091 was where Prometheus briefly
+  # moved to escape it. langfuse.env points both settings above at this port;
+  # change them together or exports break with a connection error.
+  # The 9091 console is dropped -- it is a web UI for MinIO itself.
+  minio:
+    ports: !override
+      - 9190:9000
+
+  langfuse-worker:
+    ports: !reset []
+
+  langfuse-ai-gateway:
+    ports: !reset []

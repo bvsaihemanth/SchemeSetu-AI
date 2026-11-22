@@ -1,0 +1,63 @@
+# ---- core ----
+pydantic>=2.9
+pydantic-settings>=2.5
+python-dotenv>=1.0
+
+# ---- api ----
+fastapi>=0.115
+uvicorn[standard]>=0.31
+httpx>=0.27
+
+# ---- vector store ----
+# Pinned to the minor version of the server in docker-compose.yml (v1.12.4).
+# A client more than one minor ahead logs an incompatibility warning on every
+# call; bump both together, never one alone.
+qdrant-client>=1.12,<1.13
+
+# ---- embeddings (BGE-M3: dense + sparse from one pass) ----
+FlagEmbedding>=1.3.0
+torch>=2.2
+
+# ---- llm + orchestration ----
+openai>=1.50
+langgraph>=0.2.40
+langchain-core>=0.3
+# SQLite checkpointer: the eligibility interview spans turns, and losing a
+# half-finished interview to an API restart is a real failure.
+langgraph-checkpoint-sqlite>=2.0
+
+# ---- observability ----
+# Langfuse: per-answer traces, token/cost accounting and scores.
+# Pinned to v5.x on purpose. This SDK has had breaking API changes at every
+# major version (v2's langfuse.decorators and langfuse_context are gone;
+# v4's set_current_trace_io is gone), and src/schemes_rag/tracing.py is
+# written against the v5 surface: get_client, propagate_attributes,
+# start_as_current_observation(as_type=...), create_score.
+#   v5 needs Python 3.11+ and a self-hosted server >= 4.59.0.
+#   On an older self-hosted server, pin 'langfuse>=4,<5' and expect
+#   tracing.py to need changes.
+# Optional: the application runs with it uninstalled -- tracing.py degrades
+# to no-ops -- so remove this line if you do not want it.
+langfuse>=5,<6
+langsmith>=0.1.130
+prometheus-client>=0.21
+prometheus-fastapi-instrumentator>=7.0
+structlog>=24.4
+
+# ---- ingest ----
+tqdm>=4.66
+
+# ---- eval ----
+# scripts/evaluate_rag.py needs NOTHING beyond what is already here: the
+# judges use this project's own LLM client, so they inherit its provider
+# config, its 400/404 recovery and its token accounting.
+#
+# Ragas is the reference for the metric DEFINITIONS used in
+# src/schemes_rag/evaluation/judges.py, and is deliberately not a dependency:
+# it would need its own LLM and embedding wrappers alongside the ones here,
+# duplicating the provider config and the usage ledger that makes
+# cost-per-request measurable. For five metrics that are each a prompt and a
+# count, that trade is not worth it. Uncomment to cross-check the numbers
+# against the published implementations.
+# ragas>=0.2
+# datasets>=3.0

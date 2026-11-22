@@ -1,0 +1,39 @@
+.venv/
+
+data
+eval
+schemes_txt
+scripts\__pycache__
+
+schemes_rag\__pycache__
+src\schemes_rag\agents\__pycache__
+src\schemes_rag\api\__pycache__
+src\schemes_rag\Evaluation\__pycache__
+src\schemes_rag\ingest\__pycache__
+
+unused
+
+
+__pycache__/
+*.py[cod]
+.env
+# Backups of .env too: one of these will eventually hold a real key.
+.env.*
+!.env.example
+
+.env.ollama.bak
+
+vector-db/
+.pytest_cache/
+
+# Langfuse self-host credentials: real secrets for the local instance.
+ops/langfuse/langfuse.env
+
+# Evaluation output. gold.jsonl IS tracked -- it is the answer key.
+eval/report*.json
+
+
+
+
+
+
